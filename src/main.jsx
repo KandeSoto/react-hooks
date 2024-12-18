@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { MemoHook } from './06-memos/MemoHook';
+import { CallbackHook } from './06-memos/CallbackHook';
+// import { MemoHook } from './06-memos/MemoHook';
 // import { Memorize } from './06-memos/Memorize';
 // import { Layaout } from './05-useLayaoutEffect/Layaout';
 // import { FocusScreen } from './04-useRef/FocusScreen';
@@ -15,6 +16,6 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MemoHook />
+    <CallbackHook />
   </StrictMode>
 )
