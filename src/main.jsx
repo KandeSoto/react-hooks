@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks';
+import { FocusScreen } from './04-useRef/FocusScreen';
+// import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks';
 // import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook';
 // import { SimpleForm } from './02-useEffect/SimpleForm';
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
@@ -11,6 +12,6 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MultipleCustomHooks />
+    <FocusScreen />
   </StrictMode>
 )
