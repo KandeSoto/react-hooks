@@ -3,13 +3,20 @@ import { TodoAdd } from "./TodoAdd";
 import { useTodo } from "../hooks";
 
 export const TodoApp = () => {
-    const { todos, handleNewTodo, handleDeleteTodo, handleToggleTodo } =
-        useTodo();
+    const {
+        todos,
+        todosCount,
+        pendingTodosCount,
+        handleNewTodo,
+        handleDeleteTodo,
+        handleToggleTodo,
+    } = useTodo();
 
     return (
         <>
             <h1>
-                TodoApp: 10, <small>Pendientes: 2</small>
+                TodoApp: {todosCount},{" "}
+                <small>Pendientes: {pendingTodosCount}</small>
             </h1>
             <hr />
 
